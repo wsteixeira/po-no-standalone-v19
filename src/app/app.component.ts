@@ -6,16 +6,15 @@ import { PoMenuItem } from '@po-ui/ng-components';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  standalone: false
+  standalone: false,
 })
 export class AppComponent {
-
   readonly menus: Array<PoMenuItem> = [
-    { label: 'Home', action: this.onClick.bind(this) }
+    {
+      label: 'Home',
+      icon: 'an an-house-line',
+      link: '/home',
+      shortLabel: 'Home',
+    },
   ];
-
-  private onClick() {
-    alert('Clicked in menu item')
-  }
-
 }
