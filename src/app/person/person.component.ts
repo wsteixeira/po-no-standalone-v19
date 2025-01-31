@@ -6,17 +6,14 @@ import { PoPageDynamicTableActions } from '@po-ui/ng-templates';
   selector: 'app-person',
   templateUrl: './person.component.html',
   styleUrls: ['./person.component.css'],
-  standalone: false
+  standalone: false,
 })
 export class PersonComponent implements OnInit {
+  readonly apiService = 'https://po-sample-api.onrender.com/v1/people';
 
-  // PLEASE ADD THE API URL SERVICE HERE
-  readonly apiService = 'http://localhost:8080/api';
+  readonly actions: PoPageDynamicTableActions = {};
 
-  readonly actions: PoPageDynamicTableActions = { };
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() { }
-
+  ngOnInit() {}
 }

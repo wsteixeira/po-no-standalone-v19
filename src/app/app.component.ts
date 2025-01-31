@@ -16,5 +16,11 @@ export class AppComponent {
       link: '/home',
       shortLabel: 'Home',
     },
+    {
+      label: 'Person',
+      icon: 'an an-user',
+      link: '/person',
+      shortLabel: 'Person',
+    },
   ];
 }
